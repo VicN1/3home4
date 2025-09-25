@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 350;
+    font-size: 14px;
+    transition: all .1s ease;
+    outline: none;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.material-symbols-outlined {
+    color: white;
+}
+
+.container {
+    max-width: 976px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    border: 1px solid #E5E5E5;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 50px 0;
+}
+
+.nav_left {
+    display: flex;
+    gap: 30px;
+}
+
+.nav_left .btn {
+    padding: 8px 20px;
+    background-color: #FC004A;
+    display: flex;
+    gap: 10px;
+    border-radius: 15px;
+}
+
+.nav_left .btn:hover {
+    background-color: #ff004ccb;
+}
+
+.nav_left .btn p,
+.nav_left .btn p span {
+    color: white;
+    font-size: 14px;
+}
+
+ul {
+    display: flex;
+    gap: 30px;
+}
+
+ul li a:hover {
+    color: #FC004A;
+}
+
+.logo {
+    width: 180px;
+    height: 30px;
+}
+
+.menus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.data {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: calc(100% - 20px);
+}
+
+.set {
+    border-radius: 15px;
+    box-shadow: 2px 5px 10px 1px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.set:hover {
+    transform: scale(1.01);
+}
+
+.set img {
+    width: 220px;
+    height: 220px;
+    border-radius: 15px;
+}
+
+.set img:hover {
+    cursor: pointer;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+
+.info span {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.info span:nth-child(2) {
+    font-weight: 400;
+    color: #FC004A;
+}
+
+.adds {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 9px;
+    background-color: #FC004A;
+    padding: 18px;
+}
+
+.add:hover {
+    background-color: #ff004ccb;
+    cursor: pointer;
+}
+
+.add:active {
+    background-color: #dd0042;
+}
+
+.add span {
+    font-size: 30px;
+}
+
+.ad,
+.ad img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+footer nav a {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+footer nav a:hover {
+    color: #FC004A;
+}
+
+footer nav {
+    padding: 10px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.material-symbols-outlined.menu:hover {
+    cursor: pointer;
+}
+
+.material-symbols-outlined.menu {
+    color: rgb(65, 65, 65);
+}
+
+.drop {
+    position: relative;
+    display: none;
+}
+
+.down {
+    width: 80px;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.down ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0;
+}
+
+.down li {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 6px;
+}
+
+.down li:nth-child(1) {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.down li:nth-child(5) {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+@media (max-width:956px) {
+    .container {
+        max-width: 800px;
+    }
+
+    header nav ul li a {
+        font-size: 14px;
+    }
+
+    header nav ul {
+        gap: 12px;
+    }
+
+    .set img {
+        width: 220px;
+    }
+
+    .set {
+        width: fit-content;
+    }
+
+    .set:hover {
+        width: 220px;
+    }
+
+    .menu {
+        gap: 10px;
+    }
+    
+    .nav_left {
+        gap: 10px;
+    }
+
+    .nav_left .btn {
+        padding: 4px 4px;
+        gap: 2px;
+        border-radius: 50%;
+    }
+
+    .nav_left .btn p {
+        display: none;
+    }
+
+    .logo {
+        width: 150px;
+        height: 24px;
+    }
+
+    footer nav a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:720px) {
+    .container {
+        max-width: 500px;
+    }
+
+    header nav ul li a {
+        font-size: 10px;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    .set img {
+        width: 190px;
+        height: 190px;
+    }
+
+    .set {
+        width: fit-content;
+    }
+
+    .set:hover {
+        width:auto;
+    }
+
+    .menu {
+        gap: 10px;
+    }
+    
+    .nav_left {
+        gap: 10px;
+    }
+
+    .nav_left .btn {
+        padding: 4px 4px;
+        gap: 0;
+        border-radius: 50%;
+    }
+
+    .nav_left .btn p {
+        display: none;
+    }
+
+    .logo {
+        width: 100px;
+        height: 16px;
+    }
+
+    footer nav a {
+        font-size: 14px;
+    }
+
+    .drop {
+        display: block;
+    }
+
+    .down {
+        display: none;
+    }
+
+    .drop:hover .down {
+        display: block;
+    }
+}
+
+@media (max-width:430px) {
+    .container {
+        max-width: 425px;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    header nav ul {
+        gap: 10px;
+    }
+
+    .ad img,
+    .ad {
+        border-radius: 7px;
+    }
+
+    .set img {
+        width: 190px;
+        height: 190px;
+    }
+
+    .set {
+        width: fit-content;
+    }
+
+    .set:hover {
+        width: 220px;
+    }
+
+    .menu {
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .nav_left {
+        gap: 10px;
+    }
+
+    .nav_left .btn {
+        padding: 2px 2px;
+        gap: 0;
+        border-radius: 50%;
+    }
+
+    .nav_left .btn p {
+        display: none;
+    }
+
+    .logo {
+        width: 80px;
+        height: 13px;
+    }
+
+    footer nav a {
+        font-size: 14px;
+    }
+
+    .drop {
+        display: block;
+    }
+
+    .down {
+        display: none;
+    }
+
+    .drop:hover .down {
+        display: block;
+    }
+}
